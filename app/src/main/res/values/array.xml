@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array
+        name="state">
+        <item>Select State</item>
+    </string-array>
+
+    <string-array
+        name="district">
+        <item>Select District</item>
+    </string-array>
+
+</resources>

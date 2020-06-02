@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+
+    <ScrollView
+        android:visibility="visible"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_rounded_corner_with_border">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="@string/contactus"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/_18ssp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayoutStyle"
+                android:theme="@style/TextInputLayoutStyle"
+                android:layout_weight="1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayoutStyle"
+                android:theme="@style/TextInputLayoutStyle"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_contactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/contactno"
+                    android:drawablePadding="10dp"
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayoutStyle"
+                android:theme="@style/TextInputLayoutStyle"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputLayoutStyle"
+                android:theme="@style/TextInputLayoutStyle"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/msg"
+                    android:drawablePadding="10dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textColor="@android:color/black"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/btn_submit"
+                android:layout_margin="10dp"
+                style="@style/AppTheme.RoundedCornerMaterialButton"
+                android:layout_alignParentBottom="true"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+
+
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="+1 561 283 4455"
+                    android:padding="10dp"
+                    android:drawablePadding="10dp"
+                    android:layout_weight="1.8"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_mail1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="info@inceptivetechnologies.com"
+                    android:padding="10dp"
+                    android:layout_weight="1"
+                    android:drawablePadding="10dp"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

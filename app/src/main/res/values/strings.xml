@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">User Management</string>
+    <string name="register">Register</string>
+    <string name="aboutus">About Us</string>
+    <string name="contactus">Contact Us</string>
+    <string name="logout">Logout</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="btn_submit">Submit</string>
+
+    <string name="name">Name*</string>
+    <string name="contactno">Contact No*</string>
+    <string name="email">Email*</string>
+    <string name="msg">Message*</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <string name="first_name">First Name*</string>
+    <string name="last_name">Last Name*</string>
+    <string name="email_address">Email Address*</string>
+    <string name="mobile_number">Mobile Number*</string>
+    <string name="password">Password*</string>
+    <string name="confirm_password">Confirm Password*</string>
+
+    <string name="select_state">Select State</string>
+    <string name="select_district">Select District</string>
+</resources>
